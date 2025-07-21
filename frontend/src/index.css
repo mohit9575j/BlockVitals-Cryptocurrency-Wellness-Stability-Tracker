@@ -1,0 +1,13 @@
+ .app-background {
+  margin-top: 0px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right,rgb(0, 0, 0),rgb(0, 0, 0)); 
+}
+
+ a:hover {
+  color: #4fc3f7;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
