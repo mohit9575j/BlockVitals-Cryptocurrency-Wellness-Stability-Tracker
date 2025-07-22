@@ -15,7 +15,7 @@ function TopGainersLosers() {
 
       try {
         const response = await fetch(
-          "http://localhost:5000/api/top-coins"
+          " http://13.203.231.177:5000/api/top-coins"
         );
 
         if (!response.ok) throw new Error("Failed to fetch coin data");
