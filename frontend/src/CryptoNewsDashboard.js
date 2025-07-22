@@ -13,7 +13,7 @@ function NewsPreview() {
       setError("");
 
       try {
-        const response = await fetch("http://localhost:5000/api/news?page=1&limit=6");
+        const response = await fetch(" http://13.203.231.177:5000/api/news?page=1&limit=6");
         const data = await response.json();
 
         setArticles(data.articles || []);
