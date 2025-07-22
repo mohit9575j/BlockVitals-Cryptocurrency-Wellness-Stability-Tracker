@@ -25,7 +25,7 @@ function CryptoConverter() {
        
  
       const response = await fetch(
-      `http://localhost:5000/api/prices?coins=${coinsList.join(",")}`
+      ` http://13.203.231.177:5000/api/prices?coins=${coinsList.join(",")}`
       );
 
 
