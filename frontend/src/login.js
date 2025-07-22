@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/login', formData);
+      const res = await axios.post('http://13.203.231.177:5000/api/auth/login', formData);
       localStorage.setItem('token', res.data.token); //Token save in localStorage
       navigate('/'); //edirect to home
     } catch (err) {
