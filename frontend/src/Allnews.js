@@ -16,7 +16,7 @@ function NewsGrid() {
       setError("");
 
       try {
-        const res = await fetch(`http://localhost:5000/api/news?page=${currentPage}&limit=${limit}`);
+        const res = await fetch(`http://13.203.231.177:5000/api/news?page=${currentPage}&limit=${limit}`);
         const data = await res.json();
 
         setArticles(data.articles || []);
