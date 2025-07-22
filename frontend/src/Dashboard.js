@@ -13,7 +13,7 @@ function Dashboard() {
     setLoading(true);
     setError("");
     try {
-      const url = `http://localhost:5000/api/market-prices?page=${page}&limit=${limit}`;
+      const url = ` http://13.203.231.177:5000/api/market-prices?page=${page}&limit=${limit}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error("Failed to fetch coins");
 
