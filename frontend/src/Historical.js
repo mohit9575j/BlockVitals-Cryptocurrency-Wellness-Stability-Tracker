@@ -69,7 +69,7 @@ function HistoricalPriceChart() {
       setChartData(null);
 
       try {
- const url = `http://localhost:5000/api/coin-chart?coinId=${selectedCoin}&days=${days}`;
+ const url = ` http://13.203.231.177:5000/api/coin-chart?coinId=${selectedCoin}&days=${days}`;
         const response = await fetch(url);
         if (!response.ok) throw new Error("Failed to fetch historical data");
 
